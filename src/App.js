@@ -1,0 +1,11 @@
+import logo from './logo.svg';
+import './App.css';
+import Main from './page/main';
+
+const App = () => {
+  return (
+    <Main/>
+  );
+}
+
+export default App;
