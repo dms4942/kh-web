@@ -52,7 +52,7 @@ const Title = () => {
           </Link>
         </div>
         <div>
-          <img src={main} style={{ width: '28rem' }} />
+          <img src={main} style={{ width: '28rem' }} alt={'main'} />
         </div>
       </div>
     </TitleContainer>

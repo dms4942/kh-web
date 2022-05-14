@@ -1,8 +1,6 @@
-import { Grid } from '@material-ui/core';
 import React from 'react';
 import logo from '../img/logo.png';
 import { Nav, NavbarWrapper, NavItem, NavLogo } from '../style/headerStyle';
-import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 
 const Header = ({ select, setSelect }) => {

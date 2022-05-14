@@ -1,11 +1,9 @@
-import { Grid } from '@material-ui/core';
 import React from 'react';
 import logo from '../img/logo.png';
 import {
   FooterLogo,
   FooterWrapper,
   LegalItem,
-  NavItem,
   ServiceItem,
 } from '../style/footerStyle';
 import { Link } from 'react-scroll';

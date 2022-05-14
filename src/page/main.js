@@ -7,7 +7,6 @@ import Header from '../component/header';
 import Title from '../component/title';
 
 const Main = () => {
-  const focusList = ['about', 'do', 'contact'];
   const [select, setSelect] = useState('');
 
   return (

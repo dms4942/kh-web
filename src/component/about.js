@@ -1,4 +1,3 @@
-import { Grid } from '@material-ui/core';
 import React, { useState } from 'react';
 import { AboutContainer } from '../style/aboutStyle';
 import icon01 from '../img/icon01.svg';
@@ -201,7 +200,7 @@ const About = () => {
             justifyContent: 'space-around',
             marginTop: '1rem',
           }}>
-          {title[select].children.map((child) => {
+          {title[select].children.map((child, index) => {
             return (
               <div
                 style={{
@@ -211,7 +210,11 @@ const About = () => {
                   padding: '1.8rem',
                   paddingTop: '2rem',
                 }}>
-                <img src={child.icon} style={{ width: '8rem' }} />
+                <img
+                  src={child.icon}
+                  style={{ width: '8rem' }}
+                  alt={`icon${index}`}
+                />
                 <p
                   style={{
                     fontSize: '0.9rem',

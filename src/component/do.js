@@ -1,7 +1,5 @@
 import React from 'react';
-import main from '../img/main.jpg';
 import { ContentText, ContentTitle, DoContainer } from '../style/doStyle';
-import marketing from '../img/marketing.jpg';
 import broadcast from '../img/broadcast.jpg';
 import entertain from '../img/entertain.png';
 import translate from '../img/translate.jpg';
@@ -32,7 +30,11 @@ const Do = () => {
           marginBottom: '8rem',
         }}>
         <div style={{ marginRight: '5rem' }}>
-          <img src={entertain} style={{ width: '25rem', opacity: 0.9 }} />
+          <img
+            src={entertain}
+            style={{ width: '25rem', opacity: 0.9 }}
+            alt={'entertain'}
+          />
         </div>
         <div>
           <ContentTitle>음반 수출</ContentTitle>
@@ -66,7 +68,7 @@ const Do = () => {
           marginBottom: '8rem',
         }}>
         <div style={{ marginRight: '5rem' }}>
-          <img src={broadcast} style={{ width: '25rem' }} />
+          <img src={broadcast} style={{ width: '25rem' }} alt={'broadcast'} />
         </div>
         <div>
           <ContentTitle>라인 프로덕션</ContentTitle>
@@ -97,7 +99,11 @@ const Do = () => {
           marginBottom: '8rem',
         }}>
         <div style={{ marginRight: '5rem' }}>
-          <img src={development} style={{ width: '25rem' }} />
+          <img
+            src={development}
+            style={{ width: '25rem' }}
+            alt={'development'}
+          />
         </div>
         <div>
           <ContentTitle>{'블로깅 & 개발'}</ContentTitle>
@@ -132,7 +138,7 @@ const Do = () => {
           marginBottom: '8rem',
         }}>
         <div style={{ marginRight: '5rem' }}>
-          <img src={translate} style={{ width: '25rem' }} />
+          <img src={translate} style={{ width: '25rem' }} alt={'translate'} />
         </div>
         <div>
           <ContentTitle>통 ⦁ 번역 서비스</ContentTitle>

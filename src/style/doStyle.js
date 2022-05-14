@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Grid } from '@material-ui/core';
 import { Color } from './globalStyle';
 
 export const DoContainer = styled.section`

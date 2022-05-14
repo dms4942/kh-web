@@ -1,7 +1,6 @@
 import React from 'react';
 import { ContactContainer } from '../style/contactStyle';
 import contact from '../img/contact.png';
-import Footer from './footer';
 import { Color } from '../style/globalStyle';
 
 const Contact = () => {
@@ -48,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <img src={contact} style={{ width: '32rem' }} />
+          <img src={contact} style={{ width: '32rem' }} alt={'contact'} />
         </div>
       </div>
     </ContactContainer>
