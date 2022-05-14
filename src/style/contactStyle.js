@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Grid } from '@material-ui/core';
 
 export const ContactContainer = styled.section`
   width: 100%;

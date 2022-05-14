@@ -31,10 +31,18 @@ const Footer = () => {
       </ServiceItem>
       <LegalItem>
         <p>Legal</p>
-        <a>Terms of Use</a>
-        <a>Privacy</a>
-        <a>Privacy</a>
-        <a>Do Not Sell My Personal Information</a>
+        <Link to='0' spy={true} smooth={true} offset={-100}>
+          Terms of Use
+        </Link>
+        <Link to='0' spy={true} smooth={true} offset={-100}>
+          Privacy
+        </Link>
+        <Link to='0' spy={true} smooth={true} offset={-100}>
+          Privacy
+        </Link>
+        <Link to='0' spy={true} smooth={true} offset={-100}>
+          Do Not Sell My Personal Information
+        </Link>
       </LegalItem>
     </FooterWrapper>
   );
