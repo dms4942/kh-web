@@ -1,38 +1,17 @@
 import styled from 'styled-components';
 import { Grid } from '@material-ui/core';
 
-export const NavbarWrapper = styled.header`
+export const FooterWrapper = styled.div`
   width: 100%;
-  height: 65px;
-  position: fixed;
-  top: 0;
+  height: 300px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: '#FFFFFF';
-  z-index: 10;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: '#000000';
 `;
 
-export const Nav = styled(Grid)`
-  &.MuiGrid-root {
-    display: flex;
-    width: 100%;
-    height: 65px;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 2rem;
-    background-color: '#FFFFFF';
-    @media (max-width: 1024px) {
-      padding: 0;
-      width: 100%;
-      padding: 0 0.8em;
-    }
-  }
-`;
-
-export const NavLogo = styled(Grid)`
+export const FooterLogo = styled(Grid)`
   &.MuiGrid-root {
     display: flex;
     justify-content: flex-start;
@@ -56,9 +35,9 @@ export const NavItem = styled(Grid)`
       font-size: 1rem;
       font-family: 'Spoqa-Montserrat';
       text-decoration: none;
-      @media (max-width: 1024px) {
+      /* @media (max-width: 1024px) {
         display: none;
-      }
+      } */
     }
   }
 `;
