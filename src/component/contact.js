@@ -1,33 +1,56 @@
 import React from 'react';
 import { ContactContainer } from '../style/contactStyle';
-import main from '../img/main.jpg';
+import contact from '../img/contact.png';
 import Footer from './footer';
+import { Color } from '../style/globalStyle';
 
 const Contact = () => {
   return (
-    <ContactContainer>
-      <p>contact</p>
+    <ContactContainer id='3'>
+      <p
+        style={{
+          fontSize: '1.2rem',
+          fontWeight: 'bold',
+          color: Color.contentTitle,
+          marginTop: '5rem',
+        }}>
+        contact
+      </p>
       <div
         style={{
           width: '80%',
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          marginTop: '100px',
+          alignItems: 'center',
+          marginTop: '2rem',
+          paddingLeft: '5rem',
         }}>
         <div>
-          <p>Phone number</p>
-          <p>+1-917-683-1919 (US)</p>
-          <p>+82-010-2669-1206 (KR)</p>
-
-          <p>e-mail</p>
-          <p>khsolution95@gmail.com</p>
+          <div>
+            <p style={{ color: Color.contentTitle, fontWeight: 'bold' }}>
+              Phone number
+            </p>
+            <p style={{ color: Color.contentText, margin: '0.5rem' }}>
+              +1-917-683-1919 (US)
+            </p>
+            <p style={{ color: Color.contentText, margin: '0.5rem' }}>
+              +82-10-2669-1206 (KR)
+            </p>
+          </div>
+          <div style={{ marginTop: '3rem' }}>
+            <p style={{ color: Color.contentTitle, fontWeight: 'bold' }}>
+              e-mail
+            </p>
+            <p style={{ color: Color.contentText, margin: '0.5rem' }}>
+              khsolution95@gmail.com
+            </p>
+          </div>
         </div>
         <div>
-          <img src={main} style={{ width: '400px' }} />
+          <img src={contact} style={{ width: '32rem' }} />
         </div>
       </div>
-      <Footer />
     </ContactContainer>
   );
 };
