@@ -32,7 +32,7 @@ const Do = () => {
           marginBottom: '8rem',
         }}>
         <div style={{ marginRight: '5rem' }}>
-          <img src={entertain} style={{ width: '25rem' }} />
+          <img src={entertain} style={{ width: '25rem', opacity: 0.9 }} />
         </div>
         <div>
           <ContentTitle>음반 수출</ContentTitle>
