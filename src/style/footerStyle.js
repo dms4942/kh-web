@@ -18,8 +18,9 @@ export const FooterLogo = styled(Grid)`
     justify-content: flex-start;
     align-items: center;
     background-color: 'red';
-    padding-left: 2rem;
-    margin-right: 5rem;
+    // padding-left: 2rem;
+    margin-right: 2.5rem;
+    
   }
 `;
 
@@ -30,7 +31,7 @@ export const ServiceItem = styled(Grid)`
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: flex-start;
-    margin-left: 50px;
+    // margin-left: 20px;
     & > p {
       margin: 0;
       margin-bottom: 1rem;

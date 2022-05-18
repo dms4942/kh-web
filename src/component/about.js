@@ -134,16 +134,17 @@ const About = () => {
       <div style={{ width: '80%' }}>
         <p
           style={{
-            fontSize: '1.2rem',
-            fontWeight: 'bold',
+            fontSize: '2rem',
+            // fontWeight: 'bold',
             color: Color.contentTitle,
             marginTop: '5rem',
+            fontFamily:'ArvoRegular'
           }}>
-          about us
+          About Us
         </p>
         <p
           style={{
-            fontSize: '0.9rem',
+            fontSize: '1.1rem',
             margin: 0,
             color: Color.contentText,
             fontWeight: 600,
@@ -154,7 +155,7 @@ const About = () => {
         </p>
         <p
           style={{
-            fontSize: '0.9rem',
+            fontSize: '1.1rem',
             margin: 0,
             color: Color.contentText,
             fontWeight: 600,
@@ -179,13 +180,18 @@ const About = () => {
           }}>
           {title.map((item, index) => {
             return (
+             
               <span
                 style={{
                   fontSize: '1rem',
-                  padding: '10px',
                   fontWeight: select === index ? 'bold' : 400,
                   cursor: 'pointer',
                   color: '#333d4b',
+                  paddingBottom:'0.3rem',
+                  padding:'0.3rem',
+                  border:'0 solid',
+                  borderBottomColor:'black',
+                  borderBottomWidth: select === index ? '2px' : '0',
                 }}
                 onClick={() => setSelect(index)}>
                 {item.title}
@@ -205,10 +211,11 @@ const About = () => {
               <div
                 style={{
                   width: '12rem',
-                  //   backgroundColor: 'white',
                   borderRadius: 25,
                   padding: '1.8rem',
                   paddingTop: '2rem',
+                  margin:'1rem'
+
                 }}>
                 <img
                   src={child.icon}

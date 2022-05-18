@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "ArvoBold";        
+  src: url("./font/Arvo-Bold.ttf"); 
+}
+@font-face {
+  font-family: "ArvoRegular";
+  src: url("./font/Arvo-Regular.ttf"); 
+}
+@font-face {
+  font-family: "NotoBold";        
+  src: url("./font/NotoSerifKR-Bold.otf"); 
+}
+@font-face {
+  font-family: "NotoMedium";
+  src: url("./font/NotoSerifKR-Medium.otf"); 
+}
+@font-face {
+  font-family: "NotoRegular";
+  src: url("./font/NotoSerifKR-Regular.otf"); 
+}
 .App {
   text-align: center;
 }

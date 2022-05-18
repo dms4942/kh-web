@@ -8,19 +8,21 @@ const Contact = () => {
     <ContactContainer id='3'>
       <p
         style={{
-          fontSize: '1.2rem',
-          fontWeight: 'bold',
+          fontSize: '2rem',
+          // fontWeight: 'bold',
           color: Color.contentTitle,
           marginTop: '5rem',
+          fontFamily:'ArvoRegular'
         }}>
-        contact
+        Contact
       </p>
       <div
         style={{
-          width: '80%',
+          width: '100%',
+          maxWidth:'1200px',
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'space-between',
+          justifyContent: 'space-around',
           alignItems: 'center',
           marginTop: '2rem',
           paddingLeft: '5rem',
@@ -28,7 +30,7 @@ const Contact = () => {
         <div>
           <div>
             <p style={{ color: Color.contentTitle, fontWeight: 'bold' }}>
-              Phone number
+              Phone Number
             </p>
             <p style={{ color: Color.contentText, margin: '0.5rem' }}>
               +1-917-683-1919 (US)
@@ -39,7 +41,7 @@ const Contact = () => {
           </div>
           <div style={{ marginTop: '3rem' }}>
             <p style={{ color: Color.contentTitle, fontWeight: 'bold' }}>
-              e-mail
+              E-mail
             </p>
             <p style={{ color: Color.contentText, margin: '0.5rem' }}>
               khsolution95@gmail.com

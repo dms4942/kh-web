@@ -3,7 +3,7 @@ import logo from '../img/logo.png';
 import {
   FooterLogo,
   FooterWrapper,
-  LegalItem,
+  // LegalItem,
   ServiceItem,
 } from '../style/footerStyle';
 import { Link } from 'react-scroll';
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <FooterLogo xs={2}>
-        <img src={logo} style={{ width: '150px' }} alt={'logo'} />
+        <img src={logo} style={{ width: '120px' }} alt={'logo'} />
       </FooterLogo>
       <ServiceItem>
         <p>Services</p>
@@ -29,7 +29,7 @@ const Footer = () => {
           통번역 서비스
         </Link>
       </ServiceItem>
-      <LegalItem>
+      {/* <LegalItem>
         <p>Legal</p>
         <Link to='0' spy={true} smooth={true} offset={-100}>
           Terms of Use
@@ -43,7 +43,7 @@ const Footer = () => {
         <Link to='0' spy={true} smooth={true} offset={-100}>
           Do Not Sell My Personal Information
         </Link>
-      </LegalItem>
+      </LegalItem> */}
     </FooterWrapper>
   );
 };

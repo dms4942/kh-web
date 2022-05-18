@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContentText, ContentTitle, DoContainer } from '../style/doStyle';
+import { ContentText, ContentTitle, DoContainer,RowContainer,TextContainer } from '../style/doStyle';
 import broadcast from '../img/broadcast.jpg';
 import entertain from '../img/entertain.png';
 import translate from '../img/translate.jpg';
@@ -11,33 +11,28 @@ const Do = () => {
     <DoContainer id='2'>
       <p
         style={{
-          fontSize: '1.2rem',
-          fontWeight: 'bold',
+          fontSize: '2rem',
+          // fontWeight: 'bold',
           color: Color.contentTitle,
           marginTop: '5rem',
           marginBottom: '3rem',
+          fontFamily:'ArvoRegular'
         }}>
-        what we do
+        Services
       </p>
-      <div
+      <RowContainer
         id={'do1'}
-        style={{
-          width: '80%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '8rem',
-        }}>
-        <div style={{ marginRight: '5rem' }}>
+       >
+        <div  style={{ marginRight: '5rem' }}>
           <img
             src={entertain}
-            style={{ width: '25rem', opacity: 0.9 }}
+            style={{ width: '30rem', opacity: 0.9 }}
             alt={'entertain'}
           />
         </div>
-        <div>
+        <TextContainer>
           <ContentTitle>음반 수출</ContentTitle>
+          <div>
           <ContentText>
             이제 K-POP은 국내 영역뿐만이 아닌 세계에서 인정받는 음악으로
             평가받고 있습니다.
@@ -55,23 +50,18 @@ const Do = () => {
             계약 이후에 발생가능한 문제들을 사전에 분석하고 대비하여 신뢰할 수
             있는 서비스를 제공드리겠습니다.
           </ContentText>
-        </div>
-      </div>
-      <div
+          </div>
+        </TextContainer>
+      </RowContainer>
+      <RowContainer
         id={'do2'}
-        style={{
-          width: '80%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '8rem',
-        }}>
+       >
         <div style={{ marginRight: '5rem' }}>
-          <img src={broadcast} style={{ width: '25rem' }} alt={'broadcast'} />
+          <img src={broadcast} style={{ width: '30rem' }} alt={'broadcast'} />
         </div>
-        <div>
+        <TextContainer>
           <ContentTitle>라인 프로덕션</ContentTitle>
+          <div>
           <ContentText>
             해외에서는 촬영하는 ‘1분 1초’가 모두 비용입니다.
           </ContentText>
@@ -87,26 +77,21 @@ const Do = () => {
             함께하겠습니다.
           </ContentText>
         </div>
-      </div>
-      <div
+        </TextContainer>
+      </RowContainer>
+      <RowContainer
         id={'do3'}
-        style={{
-          width: '80%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '8rem',
-        }}>
+       >
         <div style={{ marginRight: '5rem' }}>
           <img
             src={development}
-            style={{ width: '25rem' }}
+            style={{ width: '30rem' }}
             alt={'development'}
           />
         </div>
-        <div>
+        <TextContainer>
           <ContentTitle>{'블로깅 & 개발'}</ContentTitle>
+          <div>
           <ContentText>
             인터넷은 우리생활의 일부이자, 경제행위이며 문화현상을 이해하는
             지표로서 온라인 마케팅은 선택이 아닌 필수 입니다.
@@ -126,22 +111,17 @@ const Do = () => {
             하겠습니다.
           </ContentText>
         </div>
-      </div>
-      <div
+        </TextContainer>
+      </RowContainer>
+      <RowContainer
         id={'do4'}
-        style={{
-          width: '80%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '8rem',
-        }}>
+        >
         <div style={{ marginRight: '5rem' }}>
-          <img src={translate} style={{ width: '25rem' }} alt={'translate'} />
+          <img src={translate} style={{ width: '30rem' }} alt={'translate'} />
         </div>
-        <div>
+        <TextContainer>
           <ContentTitle>통 ・ 번역 서비스</ContentTitle>
+          <div>
           <ContentText>
             더 이상 컨퍼런스(컨벤션)에서 언어만을 통역하는 것으로는 기업의
             가치를 높일 수 없습니다.
@@ -165,7 +145,8 @@ const Do = () => {
             반응도 및 행사에 대한 전문적인 리뷰가 가능합니다.
           </ContentText>
         </div>
-      </div>
+        </TextContainer>
+      </RowContainer>
     </DoContainer>
   );
 };

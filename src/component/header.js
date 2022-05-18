@@ -18,24 +18,24 @@ const Header = ({ select, setSelect }) => {
             spy={true}
             smooth={true}
             onClick={() => setSelect('about')}
-            style={{ fontWeight: select === 'about' ? 'bold' : 'normal' }}>
-            about us
+            style={{ fontWeight: select === 'about' ? 'bold' : 'normal',fontSize:'1.2rem' }}>
+            About Us
           </Link>
           <Link
             to='2'
             spy={true}
             smooth={true}
             onClick={() => setSelect('service')}
-            style={{ fontWeight: select === 'service' ? 'bold' : 'normal' }}>
-            services
+            style={{ fontWeight: select === 'service' ? 'bold' : 'normal',fontSize:'1.2rem' }}>
+            Services
           </Link>
           <Link
             to='3'
             spy={true}
             smooth={true}
             onClick={() => setSelect('contact')}
-            style={{ fontWeight: select === 'contact' ? 'bold' : 'normal' }}>
-            contact
+            style={{ fontWeight: select === 'contact' ? 'bold' : 'normal',fontSize:'1.2rem' }}>
+            Contact
           </Link>
         </NavItem>
       </Nav>
