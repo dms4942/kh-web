@@ -80,7 +80,7 @@ const About = () => {
         },
         {
           icon: icon09,
-          title: '웹 사이트 제작',
+          title: '앱/웹 사이트 제작',
           content:
             '인터넷 비즈니스 관련 업무를 ‘One Stop’ 토탈 서비스로 제공합니다.',
         },
