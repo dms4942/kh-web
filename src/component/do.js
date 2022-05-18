@@ -141,13 +141,13 @@ const Do = () => {
           <img src={translate} style={{ width: '25rem' }} alt={'translate'} />
         </div>
         <div>
-          <ContentTitle>통 ⦁ 번역 서비스</ContentTitle>
+          <ContentTitle>통 ・ 번역 서비스</ContentTitle>
           <ContentText>
             더 이상 컨퍼런스(컨벤션)에서 언어만을 통역하는 것으로는 기업의
             가치를 높일 수 없습니다.
           </ContentText>
           <ContentText>
-            저희 ‘KH Solution’은 단순한 통 ⦁ 번역 서비스가 아닌 2개국어(한국어,
+            저희 ‘KH Solution’은 단순한 통・번역 서비스가 아닌 2개국어(한국어,
             영어)에 능통한 한국계 미국인이 서비스를 제공합니다.
           </ContentText>
           <ContentText>

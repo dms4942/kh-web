@@ -64,7 +64,7 @@ const About = () => {
       ],
     },
     {
-      title: 'Blogging & Website',
+      title: 'Blogging & Development',
       children: [
         {
           icon: icon07,
