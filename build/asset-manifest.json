@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.06fe5bff.css",
-    "main.js": "./static/js/main.3fe606a2.js",
+    "main.js": "./static/js/main.bb98924e.js",
     "static/js/787.725367af.chunk.js": "./static/js/787.725367af.chunk.js",
     "static/media/NotoSerifKR-Bold.otf": "./static/media/NotoSerifKR-Bold.09635ea0efa60cd18ccd.otf",
     "static/media/NotoSerifKR-Medium.otf": "./static/media/NotoSerifKR-Medium.9c86497566257e82d905.otf",
@@ -12,9 +12,9 @@
     "static/media/development.jpg": "./static/media/development.dd03c9457f3cab07f063.jpg",
     "static/media/main.jpg": "./static/media/main.63f741ab362e33eae713.jpg",
     "static/media/contact.png": "./static/media/contact.6d260fb53b1c358b6635.png",
+    "static/media/logo.png": "./static/media/logo.f53038cb42a9415e687f.png",
     "static/media/Arvo-Regular.ttf": "./static/media/Arvo-Regular.e3d3d53c44db025c4592.ttf",
     "static/media/Arvo-Bold.ttf": "./static/media/Arvo-Bold.7d67f4cedc80f3f5d262.ttf",
-    "static/media/logo.png": "./static/media/logo.f3ad35c612eb50cd93d9.png",
     "static/media/icon06.svg": "./static/media/icon06.820ac8f6a44620819b477ca1a5b53600.svg",
     "static/media/icon07.svg": "./static/media/icon07.1559d47878e27dd9d4055bada4480d48.svg",
     "static/media/icon01.svg": "./static/media/icon01.3cf76e09a6f1f1fbc9d6e29e395aab67.svg",
@@ -29,11 +29,11 @@
     "static/media/icon09.svg": "./static/media/icon09.ba9c450468679c1f275230286dff8513.svg",
     "index.html": "./index.html",
     "main.06fe5bff.css.map": "./static/css/main.06fe5bff.css.map",
-    "main.3fe606a2.js.map": "./static/js/main.3fe606a2.js.map",
+    "main.bb98924e.js.map": "./static/js/main.bb98924e.js.map",
     "787.725367af.chunk.js.map": "./static/js/787.725367af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06fe5bff.css",
-    "static/js/main.3fe606a2.js"
+    "static/js/main.bb98924e.js"
   ]
 }
