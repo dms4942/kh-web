@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.06fe5bff.css",
-    "main.js": "./static/js/main.bb98924e.js",
-    "static/js/787.725367af.chunk.js": "./static/js/787.725367af.chunk.js",
+    "main.js": "./static/js/main.cee1890e.js",
     "static/media/NotoSerifKR-Bold.otf": "./static/media/NotoSerifKR-Bold.09635ea0efa60cd18ccd.otf",
     "static/media/NotoSerifKR-Medium.otf": "./static/media/NotoSerifKR-Medium.9c86497566257e82d905.otf",
     "static/media/NotoSerifKR-Regular.otf": "./static/media/NotoSerifKR-Regular.e159414dcce58cf60663.otf",
@@ -29,11 +28,10 @@
     "static/media/icon09.svg": "./static/media/icon09.ba9c450468679c1f275230286dff8513.svg",
     "index.html": "./index.html",
     "main.06fe5bff.css.map": "./static/css/main.06fe5bff.css.map",
-    "main.bb98924e.js.map": "./static/js/main.bb98924e.js.map",
-    "787.725367af.chunk.js.map": "./static/js/787.725367af.chunk.js.map"
+    "main.cee1890e.js.map": "./static/js/main.cee1890e.js.map"
   },
   "entrypoints": [
     "static/css/main.06fe5bff.css",
-    "static/js/main.bb98924e.js"
+    "static/js/main.cee1890e.js"
   ]
 }
