@@ -9,6 +9,13 @@ export const FooterWrapper = styled.div`
   flex-direction: row;
   background-color: #fbfbfb;
   padding-top: 2rem;
+  padding-left: 3rem;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: auto;
+    align-items:center;
+    padding-left: 0;
+  }
 `;
 
 export const FooterLogo = styled(Grid)`
@@ -16,11 +23,13 @@ export const FooterLogo = styled(Grid)`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    background-color: 'red';
-    // padding-left: 2rem;
     margin-right: 2.5rem;
-    
+    @media (max-width: 768px) {
+      justify-content: center;
+      margin-right:0;
+      margin-bottom:1.5rem;
+  
+    }
   }
 `;
 
@@ -32,6 +41,7 @@ export const ServiceItem = styled(Grid)`
     /* justify-content: space-between; */
     align-items: flex-start;
     // margin-left: 20px;
+    margin-top:0.5rem;
     & > p {
       margin: 0;
       margin-bottom: 1rem;
@@ -47,6 +57,10 @@ export const ServiceItem = styled(Grid)`
       font-family: 'Spoqa-Montserrat';
       text-decoration: none;
       margin-bottom: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      margin-bottom:1rem;
+      align-items: center;
     }
   }
 `;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import About from '../component/about';
 import Contact from '../component/contact';
-import Do from '../component/do';
+import Service from '../component/service';
 import Footer from '../component/footer';
 import Header from '../component/header';
 import Title from '../component/title';
@@ -14,7 +14,7 @@ const Main = () => {
       <Header select={select} setSelect={setSelect} />
       <Title />
       <About />
-      <Do />
+      <Service />
       <Contact />
       <Footer />
     </div>

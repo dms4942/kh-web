@@ -24,7 +24,7 @@ export const Nav = styled(Grid)`
     justify-content: flex-start;
     align-items: center;
     padding: 0 3rem;
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       padding: 0;
       width: 100%;
       padding: 0 0.8em;
@@ -56,9 +56,10 @@ export const NavItem = styled(Grid)`
       font-size: 1rem;
       font-weight: 400;
       text-decoration: none;
-      /* @media (max-width: 1024px) {
-        display: none;
-      } */
+     
     }
+    @media (max-width: 768px) {
+      display: none;
+    } 
   }
 `;

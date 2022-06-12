@@ -9,7 +9,7 @@ const Header = ({ select, setSelect }) => {
       <Nav container>
         <NavLogo item xs={2}>
           <Link to='0' spy={true} smooth={true} style={{ cursor: 'pointer' }}>
-            <img src={logo} style={{ width: '100px' }} alt={'logo'} />
+            <img src={logo} style={{ width: '180px' }} alt={'logo'} />
           </Link>
         </NavLogo>
         <NavItem item>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AboutContainer } from '../style/aboutStyle';
+import { AboutContainer, TabContainer, ContentConatiner, MobileTabContainer, MobileTab } from '../style/aboutStyle';
 import icon01 from '../img/icon01.svg';
 import icon02 from '../img/icon02.svg';
 import icon03 from '../img/icon03.svg';
@@ -12,8 +12,9 @@ import icon09 from '../img/icon09.svg';
 import icon10 from '../img/icon10.svg';
 import icon11 from '../img/icon11.svg';
 import icon12 from '../img/icon12.svg';
+import Collapsible from 'react-collapsible';
 
-import { Color } from '../style/globalStyle';
+import { Color, SectionTitle } from '../style/globalStyle';
 
 const About = () => {
   const [select, setSelect] = useState(0);
@@ -132,16 +133,9 @@ const About = () => {
   return (
     <AboutContainer id='1'>
       <div style={{ width: '80%' }}>
-        <p
-          style={{
-            fontSize: '2rem',
-            // fontWeight: 'bold',
-            color: Color.contentTitle,
-            marginTop: '5rem',
-            fontFamily:'ArvoRegular'
-          }}>
+        <SectionTitle>
           About Us
-        </p>
+        </SectionTitle>
         <p
           style={{
             fontSize: '1.1rem',
@@ -149,6 +143,7 @@ const About = () => {
             color: Color.contentText,
             fontWeight: 600,
             marginTop: '2rem',
+            wordBreak: 'keep-all',
           }}>
           ‘KH Solution’은 미국 시장을 타겟으로한 음반 수출, 방송 코디, 마케팅
           사업 등
@@ -159,6 +154,7 @@ const About = () => {
             margin: 0,
             color: Color.contentText,
             fontWeight: 600,
+            wordBreak: 'keep-all',
           }}>
           여러 분야에서 활약하는 ‘One Stop Shop’ 종합 솔루션 제공 회사 입니다.
         </p>
@@ -172,25 +168,20 @@ const About = () => {
         </p> */}
       </div>
       <div style={{ flexDirection: 'row', marginTop: '50px' }}>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}>
+        <TabContainer>
           {title.map((item, index) => {
             return (
-             
+
               <span
                 style={{
                   fontSize: '1rem',
                   fontWeight: select === index ? 'bold' : 400,
                   cursor: 'pointer',
                   color: '#333d4b',
-                  paddingBottom:'0.3rem',
-                  padding:'0.3rem',
-                  border:'0 solid',
-                  borderBottomColor:'black',
+                  paddingBottom: '0.3rem',
+                  padding: '0.3rem',
+                  border: '0 solid',
+                  borderBottomColor: 'black',
                   borderBottomWidth: select === index ? '2px' : '0',
                 }}
                 onClick={() => setSelect(index)}>
@@ -198,14 +189,54 @@ const About = () => {
               </span>
             );
           })}
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-around',
-            marginTop: '1rem',
-          }}>
+        </TabContainer>
+        <MobileTabContainer>
+          {title.map((item, index) => {
+            return (
+              <Collapsible 
+              trigger={item.title} 
+              onClick={() => setSelect(index)} 
+              transitionTime={300}
+              triggerStyle={{width:'80vw',display:'flex',justifyContent:'center',padding: '0.8rem 0',}}
+              >
+                {title[index].children.map((child, index) => {
+                  return (
+                    <div
+                      style={{
+                        width: '12rem',
+                        borderRadius: 25,
+                        padding: '1.8rem',
+                        paddingTop: '2rem',
+                        margin: '1rem',
+                        justifyContent:'center',
+                        alignItems:'center'
+
+                      }}>
+                      <img
+                        src={child.icon}
+                        style={{ width: '8rem' }}
+                        alt={`icon${index}`}
+                      />
+                      <p
+                        style={{
+                          fontSize: '0.9rem',
+                          fontWeight: 'bold',
+                          color: Color.contentTitle,
+                          marginTop: '1rem',
+                        }}>
+                        {child.title}
+                      </p>
+                      <p style={{ color: Color.contentText, fontSize: '0.8rem', wordBreak: 'keep-all' }}>
+                        {child.content}
+                      </p>
+                    </div>
+                  );
+                })}
+              </Collapsible>
+            );
+          })}
+        </MobileTabContainer>
+        <ContentConatiner>
           {title[select].children.map((child, index) => {
             return (
               <div
@@ -214,7 +245,7 @@ const About = () => {
                   borderRadius: 25,
                   padding: '1.8rem',
                   paddingTop: '2rem',
-                  margin:'1rem'
+                  margin: '1rem'
 
                 }}>
                 <img
@@ -231,13 +262,13 @@ const About = () => {
                   }}>
                   {child.title}
                 </p>
-                <p style={{ color: Color.contentText, fontSize: '0.8rem' }}>
+                <p style={{ color: Color.contentText, fontSize: '0.8rem', wordBreak: 'keep-all' }}>
                   {child.content}
                 </p>
               </div>
             );
           })}
-        </div>
+        </ContentConatiner>
       </div>
     </AboutContainer>
   );

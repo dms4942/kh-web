@@ -1,35 +1,27 @@
 import React from 'react';
-import { ContentText, ContentTitle, DoContainer,RowContainer,TextContainer } from '../style/doStyle';
+import { ContentText, ContentTitle, ServiceContainer,RowContainer,TextContainer,ImageContainer,ServiceImage } from '../style/serviceStyle';
 import broadcast from '../img/broadcast.jpg';
 import entertain from '../img/entertain.png';
 import translate from '../img/translate.jpg';
 import development from '../img/development.jpg';
-import { Color } from '../style/globalStyle';
+import { SectionTitle} from '../style/globalStyle';
 
-const Do = () => {
+const Service = () => {
   return (
-    <DoContainer id='2'>
-      <p
-        style={{
-          fontSize: '2rem',
-          // fontWeight: 'bold',
-          color: Color.contentTitle,
-          marginTop: '5rem',
-          marginBottom: '3rem',
-          fontFamily:'ArvoRegular'
-        }}>
+    <ServiceContainer id='2'>
+      <SectionTitle>
         Services
-      </p>
+      </SectionTitle>
       <RowContainer
         id={'do1'}
        >
-        <div  style={{ marginRight: '5rem' }}>
-          <img
+        <ImageContainer>
+          <ServiceImage
             src={entertain}
-            style={{ width: '30rem', opacity: 0.9 }}
+            style={{ opacity: 0.9 }}
             alt={'entertain'}
           />
-        </div>
+        </ImageContainer>
         <TextContainer>
           <ContentTitle>음반 수출</ContentTitle>
           <div>
@@ -56,9 +48,9 @@ const Do = () => {
       <RowContainer
         id={'do2'}
        >
-        <div style={{ marginRight: '5rem' }}>
-          <img src={broadcast} style={{ width: '30rem' }} alt={'broadcast'} />
-        </div>
+        <ImageContainer>
+          <ServiceImage src={broadcast} alt={'broadcast'} />
+        </ImageContainer>
         <TextContainer>
           <ContentTitle>라인 프로덕션</ContentTitle>
           <div>
@@ -82,13 +74,12 @@ const Do = () => {
       <RowContainer
         id={'do3'}
        >
-        <div style={{ marginRight: '5rem' }}>
-          <img
+        <ImageContainer>
+          <ServiceImage
             src={development}
-            style={{ width: '30rem' }}
             alt={'development'}
           />
-        </div>
+        </ImageContainer>
         <TextContainer>
           <ContentTitle>{'블로깅 & 개발'}</ContentTitle>
           <div>
@@ -116,9 +107,9 @@ const Do = () => {
       <RowContainer
         id={'do4'}
         >
-        <div style={{ marginRight: '5rem' }}>
-          <img src={translate} style={{ width: '30rem' }} alt={'translate'} />
-        </div>
+        <ImageContainer>
+          <ServiceImage src={translate}  alt={'translate'} />
+        </ImageContainer>
         <TextContainer>
           <ContentTitle>통 ・ 번역 서비스</ContentTitle>
           <div>
@@ -147,7 +138,7 @@ const Do = () => {
         </div>
         </TextContainer>
       </RowContainer>
-    </DoContainer>
+    </ServiceContainer>
   );
 };
-export default Do;
+export default Service;

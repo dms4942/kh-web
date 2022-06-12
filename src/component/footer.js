@@ -11,8 +11,8 @@ import { Link } from 'react-scroll';
 const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterLogo xs={2}>
-        <img src={logo} style={{ width: '120px' }} alt={'logo'} />
+      <FooterLogo>
+        <img src={logo} style={{ width: '180px' }} alt={'logo'} />
       </FooterLogo>
       <ServiceItem>
         <p>Services</p>
